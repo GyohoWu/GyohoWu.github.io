@@ -1,17 +1,19 @@
+
 <!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
     <title>GSociety</title>
     <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="web-fonts-with-css/css/fontawesome-all.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
   </head>
   <body>
-    <!-- Header -->
+
     <header>
       <div class="container">
         <div class="header-title">
-          <a class="header-logo" href="#about">Gyoho</a>
+          <a class="header-logo" href="#about">Logo</a>
         </div>
         <div class="header-menu">
           <ul class="header-menu-right">
@@ -35,7 +37,6 @@
       </div>
     </header>
 
-      <!-- about -->
     <div id="about" class="top">
       <div class="inner-bg">
         <div class="top-description">
@@ -52,7 +53,9 @@
     </div>
 
     <div id = "transfer" class="class-info">
-      <h2>transfer</h2>
+      <div class="section-title">
+        <h2>transfer</h2>
+      </div>
       <p>
         information of successfully transferred students<br>you can know thier GPAs, extracurricular activities, and essay
       </p>
@@ -72,8 +75,10 @@
       </div>
     </div>
 
-    <div id = "classes" class="class-info">
-      <h2>class tips</h2>
+    <div id = "classes" class="class-info gray-section">
+      <div class="section-title">
+        <h2>class tips</h2>
+      </div>
       <p>
         Share your thoughts!<br>whose class should I take or shouldn't?
       </p>
@@ -94,7 +99,9 @@
     </div>
 
     <div id = "study" class="class-info">
-      <h2>Study Room</h2>
+      <div class="section-title">
+        <h2>Study Room</h2>
+      </div>
       <p>
         tips for successfully finishing classes<br>by providing useful websites and summarizing materials
       </p>
@@ -114,28 +121,76 @@
       </div>
     </div>
 
-    <div class="social-section">
+    <div id = "chat" class="gray-section">
+      <div class="section-title">
+        <h2>Chat Room</h2>
+      </div>
+      <p>
+        share your opinions on each topic !<br>we will post the most popular ideas on our social media
+      </p>
       <div class="container">
-        <div class="section-title">
-          <h3>Follow Us!</h3>
+        <div class="chat-topic">
+          <a href="#" class="i-1 fas fa-utensils"></a>
+          <p>what is your favorite restaurant ?</p>
         </div>
-        <div class="follow-us">
-          <a href="https://www.facebook.com/Progate-742679992421539" class="social-icon" target='_blank'>
-            <i class="fa fa-facebook"></i>
-          </a>
-          <a href="https://twitter.com/prog_8" class="social-icon" target='_blank'>
-            <i class="fa fa-twitter"></i>
-          </a>
+        <div class="chat-topic">
+          <a href="#" class="i-1 fas fa-coffee"></a>
+          <p>tell me the best coffee shop!</p>
+        </div>
+        <div class="chat-topic">
+          <a href="#" class="i-1 fas fa-chalkboard-teacher"></a>
+          <p>best professor in De Anza is...!</p>
+        </div>
+        <div class="chat-topic">
+          <a href="#" class="i-1 fas fa-film"></a>
+          <p>List 3 movies people should whatch before die !</p>
         </div>
       </div>
     </div>
 
-    <footer>
-      <div class="copyright">©2015-
-        Progate
+    <div id = "poll">
+      <div class="section-title">
+        <h2>Poll Room</h2>
       </div>
-    </footer>
+      <p>
+        De Anza students poll !
+      </p>
+      <div class="container-3">
+        <div class="poll-topic">
+          <a href="#" class="i-2 fas fa-film"></a>
+          <p>best movie of this week</p>
+        </div>
+        <div class="poll-topic">
+          <a href="#" class="i-2 fas fa-music"></a>
+          <p>hottest song this week is...</p>
+        </div>
+        <div class="poll-topic">
+          <a href="#" class="i-2 fas fa-futbol"></a>
+          <p>Which will win tonight's game?</p>
+        </div>
+        <div class="poll-topic">
+          <a href="#" class="i-2 fas fa-university"></a>
+          <p>Do you agree with the policy?</p>
+        </div>
+        <div class="poll-topic">
+          <a href="#" class="i-2 fas fa-chart-line"></a>
+          <p>which is the best?!</p>
+        </div>
+      </div>
+    </div>
 
+    <div class="social-section">
+      <div class="section-title">
+        Follow US!
+      </div>
+      <a href="#" class="fab fa-twitter"></a>
+      <a href="#" class="fab fa-facebook-f"></a>
+      <a href="#" class="fab fa-instagram"></a>
+    </div>
+
+    <footer>
+      2018 - Gyoho Wu
+    </footer>
     <script src="script.js"></script>
   </body>
 </html>

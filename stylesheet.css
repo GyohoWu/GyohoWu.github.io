@@ -44,6 +44,16 @@ header {
   padding-left:10%;
 }
 
+.container-2 {
+  padding-right:10%;
+  padding-left:18%;
+}
+
+.container-3 {
+  padding-right:15%;
+  padding-left:13%;
+}
+
 .header-title {
   float: left;
 }
@@ -137,34 +147,39 @@ header {
 .class-info{
   color:#888;
   text-align:center;
+  padding-top: 10px;
   font-size:30px;
-  border-bottom:#888 solid 1px;
-  height:330px
+  padding-bottom: 23%;
 }
 
 .class-info p{
   font-size:20px;
-  margin:10px;
-  margin-bottom:20px;
+  margin:15px;
+  margin-bottom:25px;
 }
 
-.container-2{
-  padding-right:10%;
-  padding-left:19.5%;
-  text-align: center;
+.section-title{
+  padding-top:50px;
+  text-align:center;
+}
+
+.class-info h2{
+  padding-bottom: 0;
+  font-size:60px;
+  font-weight: 400;
 }
 
 
 .subject{
-  padding:1.3% 2.1%;
+  padding:1.3% 2.2%;
   width:13%;
   margin-right:6%;
-  margin-bottom:20px;
+  margin-bottom:25px;
   background-color:rgba(16, 25, 201);
   border:1px solid rgba(16, 25, 201);
   color:white;
-  border-radius: 20px;
-  font-size:50%;
+  border-radius: 30px;
+  font-size:60%;
   float:left;
 }
 
@@ -184,4 +199,91 @@ header {
 .yellow:hover{
   color:#e8930b;
   background-color:white
+}
+
+#chat, #poll{
+  color:#888;
+  text-align:center;
+  padding-top: 10px;
+  padding-bottom: 15%;
+  font-size:20px;
+}
+
+#chat h2{
+  font-size:60px;
+}
+
+
+.i-1{
+  font-size:50px;
+  margin-top:20px;
+  color:#e5c132;
+}
+
+.chat-topic{
+  width:25%;
+  padding-bottom:10px;
+  float:left;
+}
+
+.chat-topic p{
+  margin:none;
+  display:none;
+}
+
+.gray-section{
+  background: #f4f4f4;
+  color: #888;
+}
+
+.poll-topic{
+  width:20%;
+  padding-bottom:10px;
+  float:left;
+}
+
+
+#poll h2{
+  font-size:60px;
+}
+
+.poll-topic p{
+  display:none;
+  font-size:15px;
+  padding:0 20px;
+  margin:8px 0;
+}
+
+.i-2{
+  font-size:40px;
+  margin-top:20px;
+  color:#317ce5;
+}
+
+.social-section{
+  text-align:center;
+  font-size:20px;
+  padding-bottom:20px;
+  background-color:#0c2b60;
+  color:white;
+}
+
+.fab{
+  font-size:30px;
+  margin:20px;
+  color:#95a0b2;
+}
+
+.fab:hover{
+  color:#6b81a8;
+  /*color:#e8d75f;*/
+  cursor:pointer;
+}
+
+footer{
+  padding:10px;
+  text-align:center;
+  background-color:#ba7b10;
+  color: white;
+  font-size:15px;
 }

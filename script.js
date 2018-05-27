@@ -1,3 +1,4 @@
+
 $(function(){
   $('.top-detail').click(function(){
 
@@ -20,6 +21,20 @@ $(function(){
       'scrollTop': $(href).offset().top
 
     }, 500);
+  });
+
+
+  $('.i-1').hover(
+    function(){
+      $(this).next().fadeIn();
+    },
+    function(){
+      $(this).next().fadeOut();
+  });
+
+  $('.i-2').hover(
+    function(){
+      $(this).next().css("display","block");
   });
 
 });
