@@ -20,7 +20,7 @@ $(function(){
     $('html, body').animate({
       'scrollTop': $(href).offset().top
 
-    }, 800);
+    }, 1200);
   });
 
 
