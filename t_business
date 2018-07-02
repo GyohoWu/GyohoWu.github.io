@@ -1,0 +1,182 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>GSociety</title>
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="web-fonts-with-css/css/fontawesome-all.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  </head>
+  <body>
+
+    <header>
+      <div class="container">
+        <div class="header-title">
+          <a class="header-logo" href="#about">Logo</a>
+        </div>
+        <div class="header-menu">
+          <ul class="header-menu-right">
+            <li>
+              <a href="#about" class="underline">home</a>
+            </li>
+            <li>
+              <a href="#transfer" class="underline" id="t_modal">transfer</a>
+            </li>
+            <li>
+              <a href="#classes" class="underline" id="c_modal">classes</a>
+            </li>
+            <li>
+              <a href="#study" class="underline" id="s_modal">study</a>
+            </li>
+            <li>
+              <a href="#chat" class="underline" id="ch_modal">chat</a>
+            </li>
+            <li>
+              <a href="#poll" class="underline">poll</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+
+    <div class="transfer_modal modal">
+      <a href="/EECS" class="underline">EECS</a>
+      <a href="/Economics" class="underline">Economics</a>
+      <a href="/Media" class="underline">Media</a>
+      <a href="/Statistics" class="underline">Statistics</a>
+      <a href="/Applied Math" class="underline">Applied Math</a >
+      <a href="/Business" class="underline">Business </a>
+      <a href="/Philosophy" class="underline">Philosophy</a>
+      <a href="/Linguitics" class="underline">Linguitics</a>
+    </div>
+
+    <div class="class_modal modal">
+      <a href="#" class="underline">Engineer</a>
+      <a href="#" class="underline">Economics</a>
+      <a href="#" class="underline">Communication</a>
+      <a href="#" class="underline">Global Studies</a>
+      <a href="#" class="underline">Comp Science</a>
+      <a href="#" class="underline">Business</a>
+      <a href="#" class="underline">Math</a >
+      <a href="#" class="underline">Bio chemistry</a>
+      <a href="#" class="underline">Philosophy</a>
+      <a href="#" class="underline">Sociology</a >
+      <a href="#" class="underline">Biology</a>
+      <a href="#" class="underline">Physics</a >
+    </div>
+
+    <div class="study_modal modal">
+      <a href="#" class="underline">Engineer</a>
+      <a href="#" class="underline">Economics</a>
+      <a href="#" class="underline">Communication</a>
+      <a href="#" class="underline">Global Studies</a>
+      <a href="#" class="underline">Comp Science</a>
+      <a href="#" class="underline">Business</a>
+      <a href="#" class="underline">Math</a >
+      <a href="#" class="underline">Bio chemistry</a>
+      <a href="#" class="underline">Philosophy</a>
+      <a href="#" class="underline">Sociology</a >
+      <a href="#" class="underline">Biology</a>
+      <a href="#" class="underline">Physics</a >
+    </div>
+
+    <div class="chat_modal modal_2">
+      <a href="#" >Restaurant</a>
+      <a href="#" >Cafe</a>
+      <a href="#" >professors</a>
+      <a href="#" >Movies</a >
+    </div>
+
+    <div class="tranfer-content t_1">
+      <h2></h2>
+      <div class="container">
+        <ul>
+          <li>Name
+            <p>Kivia</p>
+          </li>
+
+          <li>Accepted Universities
+            <p>UCB, UCSD, UCR</p>
+          </li>
+
+          <li>Major
+            <p>Business Admin</p>
+          </li>
+
+          <li>Total GPA
+            <p>3.92</p>
+          </li>
+
+          <li>Extraculicullar Activities
+            <p>music ministry in church, club in de anza</p>
+          </li>
+
+          <li>Advices
+            <p>Do your best for your personal statement, make it actually personal.
+              Show what’s unique about yourself. Make no room for grammar or
+              spelling mistakes - it just shows that you do not care about your
+              application enough to have other people proofread it. After you get
+              accepted, choose schools based on the culture and how you think you
+              will adapt to it. Do not just choose according to its ranking or you
+              might suffer under the workload/environment etc.</p>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="tranfer-content">
+      <h2></h2>
+      <div class="container">
+        <ul>
+          <li>Name
+            <p>A.H</p>
+          </li>
+
+          <li>Accepted Universities
+            <p>UCSB(Econ), UCSD(international business), SJSU(business admin)</p>
+          </li>
+
+          <li>Major
+            <p>international business</p>
+          </li>
+
+          <li>Total GPA
+            <p>3.7</p>
+          </li>
+
+
+          <li>Extraculicullar Activities
+            <p>TDe Anza club activities, volunteers(irregular), work on campus(only 1 quarter)</p>
+          </li>
+
+          <li>Advices
+            <p>I wanted to do volunteer or activity which related to my major. (It was hard to find it.)
+
+When I wrote UC essay, I showed the essay to my friends and professors. It is
+better for you to write emotionally rather than basic stuff. Try to show your
+character and represent who you are in your essay:)
+I hope you admit the first choice university!!! Don’t be afraid to apply prestige
+university like UCB or UCLA. (I regreted a little since I did not try those.)
+Whatever GPA you have, you may have a possibility. Good luck👌</p>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+
+    <div class="social-section">
+      <div class="section-title">
+        Follow US!
+      </div>
+      <a href="#" class="fab fa-twitter"></a>
+      <a href="#" class="fab fa-facebook-f"></a>
+      <a href="#" class="fab fa-instagram"></a>
+    </div>
+
+    <footer>
+      2018 - Gyoho Wu
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
