@@ -1,145 +1,158 @@
-
 $(function(){
-  $('.top-detail').click(function(){
+            $('.top-detail').click(function(){
 
-    var $this = $(this).find('a');
+              var $this = $(this).find('a');
 
-    if($this.text() === "Learn more"){
-      $this.text("close");
-      $('#more-text').css('display','active');
-      $('#more-text').slideDown();
-    }else{
-      $this.text("Learn more");
-      $('#more-text').slideUp();
-    }
-  });
+              if($this.text() === "Learn more"){
+                $this.text("close");
+                $('#more-text').css('display','active');
+                $('#more-text').slideDown();
+              }else{
+                $this.text("Learn more");
+                $('#more-text').slideUp();
+              }
+            });
+
+            $('.scroll').click(function(){
+
+              var href = $(this).attr('href');
+
+              $('html, body').animate({
+                'scrollTop': $(href).offset().top - 50
+
+              }, 900);
+            });
 
 
-  $('.scroll').click(function(){
+            $('.i-1').hover(
+              function(){
+                $(this).next().fadeIn();
+              },
+              function(){
+                $(this).next().fadeOut();
+            });
 
-    var href = $(this).attr('href');
+            $('.i-2').hover(
+              function(){
+                $(this).next().css("display","block");
+            });
 
-    $('html, body').animate({
-      'scrollTop': $(href).offset().top
+            $('#t_modal').click(function() {
 
-    }, 900);
-  });
+              $('.open_2').css('display','none');
+              $('.open_2').removeClass('open_2');
 
+              $('.open_3').css('display','none');
+              $('.open_3').removeClass('open_3');
 
-  $('.i-1').hover(
-    function(){
-      $(this).next().fadeIn();
-    },
-    function(){
-      $(this).next().fadeOut();
-  });
+              $('.open_4').css('display','none');
+              $('.open_4').removeClass('open_4');
 
-  $('.i-2').hover(
-    function(){
-      $(this).next().css("display","block");
-  });
+              var $answer = $('.transfer_modal');
+              if($answer.hasClass('open_1')) {
+                $answer.removeClass('open_1');
+                $answer.css("display", "none");
 
-  $('#t_modal').click(function() {
+              } else {
+                $answer.addClass('open_1');
+                $answer.css("display", "block");
+              }
+            });
 
-    $('.open_2').css('display','none');
-    $('.open_2').removeClass('open_2');
+            $('#c_modal').click(function() {
 
-    $('.open_3').css('display','none');
-    $('.open_3').removeClass('open_3');
+              $('.open_1').css('display','none');
+              $('.open_1').removeClass('open_1');
 
-    $('.open_4').css('display','none');
-    $('.open_4').removeClass('open_4');
+              $('.open_3').css('display','none');
+              $('.open_3').removeClass('open_3');
 
-    var $answer = $('.transfer_modal');
-    if($answer.hasClass('open_1')) {
-      $answer.removeClass('open_1');
-      $answer.css("display", "none");
+              $('.open_4').css('display','none');
+              $('.open_4').removeClass('open_4');
 
-    } else {
-      $answer.addClass('open_1');
-      $answer.css("display", "block");
-    }
-  });
+              var $answer = $('.class_modal');
+              if($answer.hasClass('open_2')) {
+                $answer.removeClass('open_2');
+                $answer.css("display", "none");
 
-  $('#c_modal').click(function() {
+              } else {
+                $answer.addClass('open_2');
+                $answer.css("display", "block");
+              }
+            });
 
-    $('.open_1').css('display','none');
-    $('.open_1').removeClass('open_1');
+            $('#s_modal').click(function() {
 
-    $('.open_3').css('display','none');
-    $('.open_3').removeClass('open_3');
+              $('.open_1').css('display','none');
+              $('.open_1').removeClass('open_1');
 
-    $('.open_4').css('display','none');
-    $('.open_4').removeClass('open_4');
+              $('.open_2').css('display','none');
+              $('.open_2').removeClass('open_2');
 
-    var $answer = $('.class_modal');
-    if($answer.hasClass('open_2')) {
-      $answer.removeClass('open_2');
-      $answer.css("display", "none");
+              $('.open_4').css('display','none');
+              $('.open_4').removeClass('open_4');
 
-    } else {
-      $answer.addClass('open_2');
-      $answer.css("display", "block");
-    }
-  });
+              var $answer = $('.study_modal');
+              if($answer.hasClass('open_3')) {
+                $answer.removeClass('open_3');
+                $answer.css("display", "none");
 
-  $('#s_modal').click(function() {
+              } else {
+                $answer.addClass('open_3');
+                $answer.css("display", "block");
+              }
+            });
 
-    $('.open_1').css('display','none');
-    $('.open_1').removeClass('open_1');
+            $('#ch_modal').click(function() {
 
-    $('.open_2').css('display','none');
-    $('.open_2').removeClass('open_2');
+              $('.open_1').css('display','none');
+              $('.open_1').removeClass('open_1');
 
-    $('.open_4').css('display','none');
-    $('.open_4').removeClass('open_4');
+              $('.open_2').css('display','none');
+              $('.open_2').removeClass('open_2');
 
-    var $answer = $('.study_modal');
-    if($answer.hasClass('open_3')) {
-      $answer.removeClass('open_3');
-      $answer.css("display", "none");
+              $('.open_3').css('display','none');
+              $('.open_3').removeClass('open_3');
 
-    } else {
-      $answer.addClass('open_3');
-      $answer.css("display", "block");
-    }
-  });
+              var $answer = $('.chat_modal');
+              if($answer.hasClass('open_4')) {
+                $answer.removeClass('open_4');
+                $answer.css("display", "none");
 
-  $('#ch_modal').click(function() {
+              } else {
+                $answer.addClass('open_4');
+                $answer.css("display", "block");
+              }
+            });
 
-    $('.open_1').css('display','none');
-    $('.open_1').removeClass('open_1');
+            $('.tranfer-content').click(function(){
 
-    $('.open_2').css('display','none');
-    $('.open_2').removeClass('open_2');
+              $('.open_1').css('display','none');
+              $('.open_1').removeClass('open_1');
 
-    $('.open_3').css('display','none');
-    $('.open_3').removeClass('open_3');
+              $('.open_2').css('display','none');
+              $('.open_2').removeClass('open_2');
 
-    var $answer = $('.chat_modal');
-    if($answer.hasClass('open_4')) {
-      $answer.removeClass('open_4');
-      $answer.css("display", "none");
+              $('.open_3').css('display','none');
+              $('.open_3').removeClass('open_3');
 
-    } else {
-      $answer.addClass('open_4');
-      $answer.css("display", "block");
-    }
-  });
+              $('.open_4').css('display','none');
+              $('.open_4').removeClass('open_4');
+            });
 
-  $('.tranfer-content').click(function(){
+            $('.click_disappear').click(function(){
 
-    $('.open_1').css('display','none');
-    $('.open_1').removeClass('open_1');
+              $('.open_1').css('display','none');
+              $('.open_1').removeClass('open_1');
 
-    $('.open_2').css('display','none');
-    $('.open_2').removeClass('open_2');
+              $('.open_2').css('display','none');
+              $('.open_2').removeClass('open_2');
 
-    $('.open_3').css('display','none');
-    $('.open_3').removeClass('open_3');
+              $('.open_3').css('display','none');
+              $('.open_3').removeClass('open_3');
 
-    $('.open_4').css('display','none');
-    $('.open_4').removeClass('open_4');
-  });
+              $('.open_4').css('display','none');
+              $('.open_4').removeClass('open_4');
+            });
 
-});
+          });
